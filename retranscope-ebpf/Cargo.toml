@@ -4,14 +4,9 @@ version = "0.1.0"
 edition.workspace = true
 
 [dependencies]
-retranscope-common = { path = "../retranscope-common" }
-
-aya-ebpf = { workspace = true }
-aya-log-ebpf = { workspace = true }
+libbpf-rs = { workspace = true }
 
 [build-dependencies]
-which = { workspace = true }
-
-[[bin]]
-name = "retranscope"
-path = "src/main.rs"
+libbpf-cargo = { workspace = true }
+libbpf-sys = { workspace = true }
+libc = { workspace = true }
